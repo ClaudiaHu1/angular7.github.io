@@ -1,1 +1,145 @@
-<h1>hello</h1>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Avoya Travel</title>
+
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/slick.css" rel="stylesheet">
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+  <script type="text/javascript" src="js/handlebars-v4.1.0.js"></script>
+
+  <!--render comments-->
+  <script id="comment-template" type="text/x-handlebars-template">
+
+    {{#each comment}}
+    <li class="lorem-comment-list">
+      <p>"{{comment}}"</p>
+      <span>- {{name}},</span>
+      <span class="lorem-comment-date"> {{timestamp}}</span>
+    </li>
+    {{/each}}
+
+  </script>
+  <script type="text/javascript" src="js/mockdata.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body>
+  <div class="lorem-page-container">
+    <header>
+      <div class="lorem-header-container">
+        <div class="lorem-logo-container">
+          <img src="img/logo.png">
+        </div>
+        <div class="lorem-header-nav-container">
+          <div class="lorem-header-nav-holder">
+            <div class="lorem-header-nav">
+              <a href="#">home</a>
+            </div>
+            <div class="lorem-header-nav">
+              <a href="#">uno</a>
+            </div>
+            <div class="lorem-header-nav">
+              <a href="#">dos</a>
+            </div>
+            <div class="lorem-header-nav-last">
+              <a href="#">tres</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <div class="lorem-main-container">
+      <section class="lorem-hero-container">
+        <div>
+          <div class="lorem-slider">
+            <div class="lorem-slider-img-holder">
+              <img src="img/slideshow/1.jpg">
+            </div>
+            <div class="lorem-slider-img-holder">
+              <img src="img/slideshow/2.jpg">
+            </div>
+            <div class="lorem-slider-img-holder">
+              <img src="img/slideshow/3.jpg">
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <div class="lorem-content-container">
+        <div class="lorem-content-section">
+          <div class="lorem-content-holder">
+            <h2>This is Some Content</h2>
+            <div class="lorem-content-img-holder">
+              <img src="img/column-left.jpg">
+            </div>
+            <div class="lorem-context-one">
+              content here content here content here content here
+              content here content here content here content here
+              content here content here content here content here
+            </div>
+          </div>
+        </div>
+        <div class="lorem-content-section">
+          <div class="lorem-content-holder">
+            <h2>This is Some Content</h2>
+            <div class="lorem-content-img-holder">
+              <img src="img/column-center.jpg">
+            </div>
+            <div class="lorem-context-two">
+              <ul>
+                <li><img src="img/list.png">One content</li>
+                <li><img src="img/list.png">One content</li>
+                <li><img src="img/list.png">One content</li>
+                <li><img src="img/list.png">One content</li>
+                <li><img src="img/list.png">One content</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="lorem-content-section lorem-content-comment-section">
+          <div>
+            <h2 class="lorem-comment-title">What Others are saying</h2>
+            <ul class="lorem-comment-block"></ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer>
+      <div class="lorem-footer-container">
+        <div class="lorem-footer-copyright-holder">
+          <div>&copy; copyright, all rights reserved.</div>
+        </div>
+        <div class="lorem-footer-menu-container">
+          <div class="lorem-footer-menu-holder">
+            <div class="lorem-footer-menu">
+              <a href="#">home</a>
+            </div>
+            <div class="lorem-footer-menu">
+              <a href="#">uno</a>
+            </div>
+            <div class="lorem-footer-menu">
+              <a href="#">dos</a>
+            </div>
+            <div class="lorem-footer-menu-last">
+              <a href="#">tres</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

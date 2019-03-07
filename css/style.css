@@ -224,6 +224,9 @@ footer {
   .lorem-content-container {
     text-align: center;
   }
+  .lorem-footer-container {
+    font-size: 12px;
+  }
 
 }
 
